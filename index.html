@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, Papel o Tijera</title>
+    <title>¿Piedra?, ¿Papel? o... ¿Tijera?</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,12 +34,12 @@
 </head>
 <body>
 
-    <h1>Piedra, Papel o Tijera</h1>
+    <h1>¿Piedra?, ¿Papel? o... ¿Tijera?</h1>
 
     <div class="choices">
-        <button class="choice-btn" onclick="playGame('piedra')">Piedra</button>
-        <button class="choice-btn" onclick="playGame('papel')">Papel</button>
-        <button class="choice-btn" onclick="playGame('tijera')">Tijera</button>
+        <button class="choice-btn" onclick="playGame('piedra')">¿Piedra?</button>
+        <button class="choice-btn" onclick="playGame('papel')">¿Papel?</button>
+        <button class="choice-btn" onclick="playGame('tijera')">¿Tijera?</button>
     </div>
 
     <div class="result" id="result">Elige una opción para jugar</div>
@@ -57,9 +57,9 @@
                 (playerChoice === 'papel' && computerChoice === 'piedra') ||
                 (playerChoice === 'tijera' && computerChoice === 'papel')
             ) {
-                result = '¡Ganaste! 😄';
+                result = 'muy bien ¡Ganaste! 😄';
             } else {
-                result = 'Perdiste. 😢';
+                result = 'noo perdiste. 😢';
             }
 
             document.getElementById('result').textContent = `Tú elegiste ${playerChoice}, la computadora eligió ${computerChoice}. ${result}`;
